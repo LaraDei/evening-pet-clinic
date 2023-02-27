@@ -1,6 +1,7 @@
 import './App.css';
 import {Route} from 'react-router-dom';
 import React, {Component} from 'react';
+import Home from './pages/Home'
 
 export default class App extends Component {
   renderMainRoutes(){
@@ -9,7 +10,7 @@ export default class App extends Component {
       <Route
         exact
         path='/'
-        component={}
+        component={Home}
       />
       </>
     )
@@ -25,4 +26,3 @@ render(){
   )
 }
 }
-
