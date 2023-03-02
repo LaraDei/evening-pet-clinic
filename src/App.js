@@ -6,11 +6,13 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Footer from "./components/Footer";
+import Navigation from "./components/Navigation";
 
 export default function App() {
   return (
     <div className="App" id="app">
       <main className="app-main">
+        <Navigation />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
